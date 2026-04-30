@@ -1,0 +1,44 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateEventInput {
+  content: String
+  date: String!
+  image: String
+  person: String!
+  title: String!
+  type: String!
+}
+
+type Event {
+  content: String
+  createdAt: String!
+  date: String!
+  id: ID!
+  image: String
+  person: String!
+  title: String!
+  type: String!
+  updatedAt: String!
+}
+
+type Mutation {
+  createEvent(input: CreateEventInput!): Event!
+  deleteEvent(id: ID!): Boolean!
+  updateEvent(id: ID!, input: UpdateEventInput!): Event
+}
+
+type Query {
+  event(id: ID!): Event
+  events(endDate: String, person: String, startDate: String, type: String): [Event!]!
+}
+
+input UpdateEventInput {
+  content: String
+  date: String
+  image: String
+  person: String
+  title: String
+  type: String
+}
