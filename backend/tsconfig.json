@@ -1,0 +1,1 @@
+{ "compilerOptions": {"module":"commonjs","target":"es2021","strict":true,"emitDecoratorMetadata":true,"experimentalDecorators":true},"include":["src/**/*.ts"] }

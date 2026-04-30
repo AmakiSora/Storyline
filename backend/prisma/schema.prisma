@@ -1,0 +1,13 @@
+// 中文注释：正式环境可替换成 Prisma + PostgreSQL 持久化
+
+generator client { provider = "prisma-client-js" }
+datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+model Event {
+  id String @id
+  title String
+  date DateTime
+  content String
+  image String?
+  person String
+  type String
+}
