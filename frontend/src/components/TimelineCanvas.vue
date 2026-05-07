@@ -38,10 +38,10 @@ import {
   ref, computed, watch, onMounted, onUnmounted,
   type Ref, type ComputedRef
 } from 'vue'
-import { useTimelineZoom } from '@/composables/useTimelineZoom'
-import { useTimelinePan } from '@/composables/useTimelinePan'
-import { useTimeScale } from '@/composables/useTimeScale'
-import { useTimelineStore } from '@/stores/timeline'
+import { useTimelineZoom } from '@/composables/useTimelineZoom.ts'
+import { useTimelinePan } from '@/composables/useTimelinePan.ts'
+import { useTimeScale } from '@/composables/useTimeScale.ts'
+import { useTimelineStore } from '@/stores/timeline.ts'
 import TooltipCard from './TooltipCard.vue'
 import type { TimelineEvent, VisibleEvent, RenderConfig, TimeRange } from '@/types'
 

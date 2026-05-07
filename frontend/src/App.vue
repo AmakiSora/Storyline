@@ -76,7 +76,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { useTimelineStore } from '@/stores/timeline'
+import { useTimelineStore } from '@/stores/timeline.ts'
 import TimelineCanvas from '@/components/TimelineCanvas.vue'
 import ControlPanel from '@/components/ControlPanel.vue'
 import EditorPanel from '@/components/EditorPanel.vue'
